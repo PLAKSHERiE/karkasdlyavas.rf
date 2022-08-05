@@ -1,0 +1,10 @@
+doctype html
+html(lang="ru")
+    head
+        include blocks/default/head.pug
+        +head('Мы свяжемся с вами')
+    body
+        include blocks/default/header--one-page.pug
+        +header-one-page('Спасибо! мы свяжемся с вами в ближайшее время', 'footer')
+
+        include blocks/scripts_footer.pug

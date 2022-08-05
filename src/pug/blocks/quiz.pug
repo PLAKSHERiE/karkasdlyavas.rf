@@ -1,0 +1,141 @@
+.quiz 
+    .container 
+        .title.quiz__title выберите проект и получите <b>смету</b> со спец. ценой <b>+ подарок на выбор</b>
+
+        form.quiz__form(slide-current="1")
+            input(type="hidden" value="Квиз" name="form")
+            
+            .quiz__questions 
+                .quiz__questions-item.active 1 вопрос
+                .quiz__questions-item 2 вопрос
+                .quiz__questions-item 3 вопрос
+                .quiz__questions-item 4 вопрос
+                .quiz__questions-item 5 вопрос
+
+            .quiz__form-slide(slide="1")
+                .quiz__form-title Выберите тип объекта:
+
+                .quiz__form-box 
+                    .quiz__form-col 
+                        label.quiz__form-checkbox
+                            input(type="checkbox", name="type[]" value="Садовый домик")
+                            span Садовый домик
+                        
+                        label.quiz__form-checkbox
+                            input(type="checkbox", name="type[]" value="Баня")
+                            span Баня
+                    
+                    .quiz__form-col 
+                        label.quiz__form-checkbox
+                            input(type="checkbox", name="type[]" value="Дачный дом")
+                            span Дачный дом
+                        
+                        label.quiz__form-checkbox
+                            input(type="checkbox", name="type[]" value="Дом для проживания")
+                            span Дом для проживания
+            
+            .quiz__form-slide(slide="2")
+                .quiz__form-title Выберите архитектуру:
+
+                .quiz__form-box 
+                    .quiz__form-col 
+                        label.quiz__form-radio
+                            input(type="radio", name="architecture" value="Классическая")
+                            span Классическая
+                        label.quiz__form-radio
+                            input(type="radio", name="architecture" value="Скандинавская")
+                            span Скандинавская
+                        label.quiz__form-radio
+                            input(type="radio", name="architecture" value="Барн")
+                            span Барн
+                    
+                    .quiz__form-col 
+                        label.quiz__form-radio
+                            input(type="radio", name="architecture" value="Модерн")
+                            span Модерн
+                        label.quiz__form-radio
+                            input(type="radio", name="architecture" value="Хай-тек")
+                            span Хай-тек
+            
+            .quiz__form-slide(slide="3")
+                .quiz__form-title Выберите площадь:
+
+                .quiz__form-box 
+                    .quiz__form-col 
+                        label.quiz__form-radio
+                            input(type="radio", name="square" value="40 – 70 кв.м")
+                            span 40 – 70 кв.м
+                        label.quiz__form-radio
+                            input(type="radio", name="square" value="80 – 100 кв.м")
+                            span 80 – 100 кв.м
+                    
+                    .quiz__form-col 
+                        label.quiz__form-radio
+                            input(type="radio", name="square" value="100 – 150 кв.м")
+                            span 100 – 150 кв.м
+                        label.quiz__form-radio
+                            input(type="radio", name="square" value="от 200 кв.м")
+                            span от 200 кв.м
+            
+            .quiz__form-slide(slide="4")
+                .quiz__form-title Выберите назначение дома
+
+                .quiz__form-box 
+                    .quiz__form-col 
+                        label.quiz__form-radio
+                            input(type="radio", name="appointment" value="Сезонный дом")
+                            span Сезонный дом
+                        label.quiz__form-radio
+                            input(type="radio", name="appointment" value="Дача")
+                            span Дача
+                        label.quiz__form-radio
+                            input(type="radio", name="appointment" value="Для проживания")
+                            span Для проживания
+                    
+                    .quiz__form-col 
+                        label.quiz__form-radio
+                            input(type="radio", name="appointment" value="Гостевой дом")
+                            span Гостевой дом
+                        label.quiz__form-radio
+                            input(type="radio", name="appointment" value="Временный")
+                            span Временный
+            
+            .quiz__form-slide(slide="5")
+                .quiz__form-title Выберите подарок
+
+                .quiz__form-box 
+                    .quiz__form-col 
+                        label.quiz__form-radio
+                            input(type="radio", name="gift" value="Антисептирование каркаса")
+                            span Антисептирование каркаса
+                        label.quiz__form-radio
+                            input(type="radio", name="gift" value="Покраска фасада")
+                            span Покраска фасада
+                    
+                    .quiz__form-col 
+                        label.quiz__form-radio
+                            input(type="radio", name="gift" value="Фундамент")
+                            span Фундамент 
+                        label.quiz__form-radio
+                            input(type="radio", name="gift" value="Сервисное обслуживание")
+                            span Сервисное обслуживание
+            
+            .quiz__form-slide.quiz__form-slide--last(slide="6")
+                .quiz__form-title Введите номер телефона, и мы вышлем проект и смету с ценой на указанный мессенджер
+
+                input(type="text", name="phone" placeholder="Введите ваш телефон").quiz__form-input.input.mask
+
+                .quiz__form-soc 
+                    .quiz__form-soc-title Куда отправить?
+                    .quiz__form-soc-btns 
+                        label.quiz__form-soc-btn.active
+                            input(type="radio", name="soc" value="Whats’app" checked)
+                            span Whats’app
+                        label.quiz__form-soc-btn
+                            input(type="radio", name="soc" value="Telegram")
+                            span Telegram
+                
+                button(type="submit").btn.quiz__form-send получить проект и смету
+
+            .quiz__form-control.btn__center
+                a().btn.quiz__form-next Далее

@@ -1,0 +1,43 @@
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // .connect__phone
+
+    &__phone {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 130%;
+        color: #fff;
+        @media screen and (max-width: 670px) {
+            font-size: 18px;
+        }
+    }
+
+    // .connect__call
+
+    &__call {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 130%;
+        color: #27c353;
+        position: relative;
+        @media screen and (max-width: 670px) {
+            font-size: 10px;
+        }
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            bottom: -1px;
+            position: absolute;
+            left: 0;
+            background-color: #27c353;
+            text-align: right;
+        @media screen and (max-width: 670px) {
+            bottom: 0;
+        }
+        }
+    }
+}

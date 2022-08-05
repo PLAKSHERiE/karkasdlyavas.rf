@@ -1,0 +1,10 @@
+doctype html
+html(lang="ru")
+    head
+        include blocks/default/head.pug
+        +head('Ошибка! такой страницы не существует')
+    body
+        include blocks/default/header--one-page.pug
+        +header-one-page('Ошибка! такой страницы не существует', 'footer')
+
+        include blocks/scripts_footer.pug

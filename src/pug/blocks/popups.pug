@@ -1,2 +1,40 @@
-.popup#popup1(data-fancybox)
-    p test
+.popup#call
+    form.popup__form
+        input(type="hidden", name="form" value="Заказать бесплатный звонок")
+
+        .popup__title Заполните форму
+        .popup__subtitle Мы свяжемся с вами и ответим на все вопросы
+        
+        input(type="text" placeholder="Введите ваш номер" name="phone").input.mask
+        button(type="submit").btn.popup__btn Заказать бесплатный звонок
+
+        .popup__politic Заполняя форму, вы соглашаетесь <br>с <a href="#">политикой конфиденциальности</a>
+
+
+.popup#download
+    form.popup__form
+        input(type="hidden", name="form" value="Скачать каталог и прайс-лист")
+        .popup__title Заполните форму
+        .popup__subtitle Мы свяжемся с вами и ответим на все вопросы
+        
+        input(type="text" placeholder="Введите ваш номер" name="phone").input.mask
+        button(type="submit").btn.popup__btn скачать каталог и прайс-лист
+
+        .popup__politic Заполняя форму, вы соглашаетесь <br>с <a href="#">политикой конфиденциальности</a>
+
+
+.popup#house
+    form.popup__form
+        input(type="hidden", name="form" value="Получить коммерческое предложение")
+        .popup__title Заполните форму
+        .popup__subtitle Мы свяжемся с вами и ответим на все вопросы
+        
+        input(type="text" placeholder="Введите ваш номер" name="phone").input.mask
+        input(type="hidden", name="house" value="")
+        button(type="submit").btn.popup__btn Получить Комм. предложение
+
+        .popup__politic Заполняя форму, вы соглашаетесь <br>с <a href="#">политикой конфиденциальности</a>
+
+
+.error
+    .error__text 

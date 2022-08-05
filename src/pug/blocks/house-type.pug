@@ -1,0 +1,23 @@
+-
+    var houses = [
+        {'img': 1, 'title': 'Cадовый дом'},
+        {'img': 2, 'title': 'Баня'},
+        {'img': 3, 'title': 'Дачный дом'},
+        {'img': 4, 'title': 'Для проживания'},
+    ]
+
+.house-type
+    .container 
+        .title.house-type__title Производим дома любого <b>предназначения</b> и <b>архитектурных форм</b>
+        .subtitle.house-type__subtitle Узнайте стоимость и сроки строительства с доставкой и сборкой 
+
+        .house-type__box 
+            each house in houses
+                .house-type__item 
+                    .house-type__item-wrapper
+                        .house-type__img 
+                            picture
+                                source(type="image/webp" data-srcset="img/house-type/"+house['img']+".webp" data-sizes="100w")
+                                img.lazy(data-src="img/house-type/"+house['img']+".jpg", alt="")
+                        .house-type__item-title=house["title"]
+                        a(href="#house" data-house=house['title']).btn.house-type__btn Получить КП

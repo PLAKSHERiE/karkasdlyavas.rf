@@ -2,8 +2,14 @@ doctype html
 html(lang="ru")
   head
     include blocks/default/head.pug
+    +head('Каркасные строительные технологии')
   body
-    include blocks/header.pug
+    include blocks/default/header.pug
+    include blocks/advantage.pug
+    include blocks/house-type.pug
+    include blocks/works.pug
+    include blocks/quiz.pug
+    include blocks/download.pug
 
     //- div.lazy.test(data-bg="img/bg_2.webp", data-bg-fallback="img/bg_2.jpg")
 

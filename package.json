@@ -60,6 +60,8 @@
   },
   "dependencies": {
     "@fancyapps/ui": "^4.0.31",
+    "dotenv": "^16.0.1",
+    "inputmask": "^5.0.7",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "slick-carousel-latest": "^1.9.0",

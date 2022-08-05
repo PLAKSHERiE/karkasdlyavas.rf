@@ -12,6 +12,9 @@ const config = {
     pug: `${srcPath}/pug`,
     css: `${srcPath}/css`,
     php: `${srcPath}/php`,
+    files: `${srcPath}/files`,
+
+    domain: 'http://karkasdlyavas/',
   },
 
   dest: {
@@ -22,6 +25,9 @@ const config = {
     fonts: `${destPath}/fonts`,
     img: `${destPath}/img`,
     php: `${destPath}/php`,
+    files: `${destPath}/files`,
+
+    domain: '',
   },
 
   setEnv() {

@@ -2,19 +2,57 @@ import $ from "jquery";
 import "slick-carousel-latest";
 
 export default () => {
-    $("#slider1").slick({
-        infinite: true,
+    $(".works__slider").slick({
+        infinite: false,
         speed: 300,
         slidesToShow: 1,
         centerMode: true,
-        variableWidth: true,
-        arrows: false,
+        centerPadding: '470px',
+        arrows: true,
         dots: false,
+        prevArrow: $('.works__slider-btn.prev'),
+        nextArrow: $('.works__slider-btn.next'),
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 1788,
                 settings: {
-                    slidesToShow: 1,
+                    centerPadding: '400px',
+                },
+            },
+            {
+                breakpoint: 1660,
+                settings: {
+                    centerPadding: '360px',
+                },
+            },
+            {
+                breakpoint: 1580,
+                settings: {
+                    centerPadding: '300px',
+                },
+            },
+            {
+                breakpoint: 1460,
+                settings: {
+                    centerPadding: '250px',
+                },
+            },
+            {
+                breakpoint: 1370,
+                settings: {
+                    centerPadding: '200px',
+                },
+            },
+            {
+                breakpoint: 1265,
+                settings: {
+                    centerPadding: '150px',
+                },
+            },
+            {
+                breakpoint: 1180,
+                settings: {
+                    centerPadding: '0px',
                 },
             },
         ],

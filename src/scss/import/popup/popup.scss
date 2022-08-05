@@ -1,47 +1,95 @@
-.white-popup {
-    position: relative;
-    background: #e6e5de;
-    padding: 24px 10px 15px 10px;
-    width: auto;
-    max-width: 408px;
-    margin: 20px auto;
-    box-sizing: border-box;
-    padding-top: 50px;
-    border: 2px solid #171717;
-}
-
-.mfp-zoom-in.mfp-bg {
-    transition: all 0.3s ease-out;
-    opacity: 0;
-}
-
-.mfp-zoom-in.mfp-ready.mfp-bg {
-    opacity: 0.8;
-}
-
-.mfp-zoom-in .mfp-with-anim {
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    transform: scale(0.8);
-}
-
-.mfp-zoom-in.mfp-ready .mfp-with-anim {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.mfp-zoom-in.mfp-removing.mfp-bg {
-    opacity: 0;
-}
-
-.mfp-zoom-in.mfp-removing .mfp-with-anim {
-    transform: scale(0.8);
-    opacity: 0;
-}
-
-.mfp-close-btn-in .mfp-close {
-    color: #000;
+.popup {
+    display: none;
 }
 
 .popup {
+    width: 100%;
+    max-width: 340px;
+    padding: 40px 27px;
+    // .popup__form
+
+    &__form {
+    }
+
+    // .popup__title
+
+    &__title {
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 130%;
+        /* or 31px */
+
+        text-align: center;
+
+        color: #000000;
+    }
+
+    // .popup__subtitle
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        /* or 21px */
+
+        text-align: center;
+
+        color: #000000;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    // .popup__btn
+
+    &__btn {
+        margin-top: 10px;
+        font-size: 18px;
+line-height: 27px;
+width: 100%;
+    }
+
+    // .popup__politic
+
+    &__politic {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 110%;
+        /* or 13px */
+
+        text-align: center;
+
+        color: #707070;
+        margin-top: 14px;
+        a {
+            color: #33be5a;
+            position: relative;
+            display: inline-block;
+            
+            &::after{
+                content: '';
+                height: 1px;
+                width: 100%;
+                background: #33be5a;
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
+.input {
+}
+.btn {
+}
+
+.fancybox__container .is-close {
+    top: 0 !important;
+    svg {
+        stroke: #cacaca;
+        box-shadow: none;
+        filter: none;
+        width: 18px;
+        height: 18px;
+    }
 }

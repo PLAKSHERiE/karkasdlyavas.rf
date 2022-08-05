@@ -1,0 +1,138 @@
+.footer {
+    position: relative;
+    padding: 32px 0 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: 479px) {
+        padding-bottom: 38px;
+    }
+    // .footer__bg
+
+    &__bg {
+        background-color: rgba(0, 0, 0, 0.77);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    // .footer__box
+
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 479px) {
+            flex-direction: column;
+        }
+    }
+
+    // .footer__info
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 52px;
+        @media screen and (max-width: 920px) {
+            gap: 40px;
+        }
+        @media screen and (max-width: 670px) {
+            gap: 28px;
+        }
+        @media screen and (max-width: 479px) {
+            flex-direction: column;
+            margin-top: 12px;
+        }
+    }
+    &__politic {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 130%;
+        text-align: right;
+
+        color: #ffffff;
+        margin-top: 14px;
+        @media screen and (max-width: 670px) {
+            margin-top: 10px;
+        }
+        @media screen and (max-width: 479px) {
+            margin-top: 26px;
+        }
+    }
+    .logo {
+        @media screen and (max-width: 479px) {
+            gap: 20px;
+            align-items: center;
+        }
+        // .logo__img
+
+        &__img {
+            @media screen and (max-width: 479px) {
+                width: 120px;
+            }
+        }
+
+        // .logo__sep
+
+        &__sep {
+            @media screen and (max-width: 670px) {
+                display: none;
+            }
+        }
+
+        // .logo__title
+
+        &__title {
+            color: #ffffff;
+            @media screen and (max-width: 670px) {
+                display: none;
+            }
+            @media screen and (max-width: 479px) {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    .soc {
+        // .soc__title
+
+        &__title {
+        }
+
+        // .soc__btns
+
+        &__btns {
+        }
+
+        // .soc__btn
+
+        &__btn {
+        }
+    }
+    .connect {
+        @media screen and (max-width: 479px) {
+            align-items: center;
+        }
+        // .connect__phone
+
+        &__phone {
+        }
+
+        // .connect__call
+
+        &__call {
+        @media screen and (max-width: 479px) {
+            margin-top: 2px;
+        }
+        }
+    }
+}
+.lazy {
+}
+.container {
+}

@@ -1,0 +1,33 @@
+.soc {
+    display: flex;
+    align-items: center;
+    // .soc__title
+
+    &__title {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 110%;
+        color: #a6a6a6;
+        max-width: 66px;
+        @media screen and (max-width: 790px) {
+            display: none;
+        }
+    }
+
+    // .soc__btns
+
+    &__btns {
+        position: relative;
+
+    }
+
+    // .soc__btn
+
+    &__btn {
+        display: inline-block;
+
+        &:not(:first-child) {
+            margin-left: -7px;
+        }
+    }
+}

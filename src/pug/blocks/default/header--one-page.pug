@@ -1,0 +1,8 @@
+mixin header-one-page(title, bg)
+    header.header--success.lazy(data-bg="img/"+bg+".webp", data-bg-fallback="img/"+bg+".jpg")
+        .container
+            .header--success__box
+                .title.header--success__title
+                    b=title
+        
+                a(href="/").btn.header--success__btn вернуться на главную

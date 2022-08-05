@@ -1,0 +1,20 @@
+.error{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    padding: 20px 30px;
+    background: linear-gradient(180deg, #41D26A 0%, #27AC4C 100%);
+    border-radius: 10px;
+    filter: drop-shadow(0px 6px 34px rgba(0, 0, 0, 0.4));
+    transition: none;
+    z-index: 3000;
+    pointer-events: none;
+
+    &__text{
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
