@@ -17,4 +17,10 @@ export default () => {
     const lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy",
     });
+
+    window.onload = function () {
+        setTimeout(() => {
+            lazyLoadInstance.loadAll();
+        }, 2000);
+    };
 };

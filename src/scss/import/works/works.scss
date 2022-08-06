@@ -25,9 +25,15 @@
     &__slider {
         .slick-slide {
             transition: all 0.3s ease-in-out;
+            .works__slide-img{
+                border: 1px solid #fff;
+            }
         }
         .slick-slide:not(.slick-current) {
             opacity: 0.2;
+            .works__slide-img{
+                border-color: #e5e5e5;
+            }
         }
 
         @media screen and (max-width: 670px) {
@@ -57,6 +63,7 @@
         border-radius: 8px;
         overflow: hidden;
         margin: auto;
+        transition: all 0.3s ease-in-out;
 
         @media screen and (max-width: 920px) {
             width: 623px;
