@@ -8,7 +8,7 @@
     
     if(!isset($_POST)) return;
 
-    $to      = 'lewalauncher@mail.ru';
+    $to      = 'karkasdliavas@yandex.ru';
     $subject = 'Заявка с каркасдлявас.рф';
     $message = '';
 

@@ -8,7 +8,7 @@
     
     if(!isset($_POST)) return;
 
-    $to      = 'lewalauncher@mail.ru';
+    $to      = 'karkasdliavas@yandex.ru';
     $subject = 'Заявка с каркасдлявас.рф';
     $message = '';
 
@@ -22,7 +22,7 @@
     $redirect = '/success.html';
 
     if ($_POST['form'] == 'Скачать каталог и прайс-лист') {
-        $redirect = 'https://disk.yandex.ru/d/vZHlZ-phcIHlcg';
+        $redirect = 'https://disk.yandex.ru/d/41XmGBq9j0WGHQ';
     }
 
     foreach ($_POST as $key => $value) {

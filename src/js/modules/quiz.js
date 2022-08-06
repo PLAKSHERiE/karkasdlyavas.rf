@@ -1,7 +1,7 @@
 import $ from "jquery";
 import { showError } from './error.js';
 // import { domain } from '../env.js';
-import config from '../../../gulp/config.js';
+import env from '../helpers/env.js';
 
 export default () => {
     const errorsQuiz = [
@@ -95,7 +95,7 @@ export default () => {
         data.type = 'dddd';
 
         $.ajax({
-            url: `${config.dest.domain ? config.isProd : config.src.domain}php/quiz.php`,
+            url: `${env.DOMAIN}php/quiz.php`,
             type: 'post',
             dataType: 'json',
             data,
