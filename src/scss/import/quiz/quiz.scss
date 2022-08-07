@@ -267,7 +267,7 @@
     &__form-input {
         max-width: 294px;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 24px;
     }
 
     // .quiz__form-soc
@@ -300,7 +300,7 @@
 
     &__form-soc-btn {
         font-weight: 400;
-        font-size: 11px;
+        font-size: 10px;
         line-height: 130%;
         background: #f0f0f0;
         color: #000000;
@@ -311,12 +311,12 @@
 
         &:first-child {
             border-radius: 100px 0 0 100px;
-            padding: 6px 10px;
+            padding: 8px 10px;
         }
 
         &:last-child {
             border-radius: 0 100px 100px 0;
-            padding: 6px 14px 6px 10px;
+            padding: 8px 14px 8px 10px;
         }
 
         &.active {
