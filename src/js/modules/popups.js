@@ -8,7 +8,8 @@ export default () => {
         // Your options go here
     });
 
-    $("[data-house]").on("click", function () {
+    $("[data-house]").on("click", function (e) {
+        e.preventDefault();
         $('#house [name="house"]').val($(this).attr("data-house"));
         Fancybox.show(
             [

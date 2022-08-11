@@ -25,13 +25,9 @@
         gap: 20px;
         margin-top: 60px;
 
-        @media screen and (max-width: 920px) {
+        @media screen and (max-width: 680px) {
             flex-wrap: wrap;
             justify-content: center;
-            gap: 40px 20px;
-        }
-
-        @media screen and (max-width: 670px) {
             margin-top: 50px;
             gap: 30px;
         }
@@ -74,15 +70,5 @@
         @media screen and (max-width: 670px) {
             font-size: 16px;
         }
-    }
-}
-.container {
-}
-.title {
-}
-.btn {
-    // .btn__center
-
-    &__center {
     }
 }
