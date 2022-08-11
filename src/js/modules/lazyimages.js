@@ -18,9 +18,9 @@ export default () => {
         elements_selector: ".lazy",
     });
 
-    window.onload = function () {
-        setTimeout(() => {
-            lazyLoadInstance.loadAll();
-        }, 2000);
-    };
+    // window.onload = function () {
+    //     setTimeout(() => {
+    //         lazyLoadInstance.loadAll();
+    //     }, 2000);
+    // };
 };
