@@ -1,6 +1,24 @@
+-
+    var downloads = [
+        {'img': 1, 'title': 'С мансардой'},
+        {'img': 2, 'title': 'Одноэтажные'},
+        {'img': 3, 'title': 'Полутораэтажные'},
+    ]
+
 .download
     .container 
         .title.download__title <b>скачайте каталог и прайс-лист, актуальные на 2022 год</b>
+
+        .download__box 
+            each item in downloads
+                .download__item 
+                    .download__item-wrapper
+                        .download__item-img 
+                            picture
+                                source(type="image/webp" data-srcset="img/download/"+item['img']+".webp" data-sizes="100w")
+                                img.lazy(data-src="img/download/"+item['img']+".jpg", alt="" data-fancybox="downloads")
+
+                        .download__item-title=item["title"]
 
         .btn__center 
             a(href="#download" data-fancybox).btn.download__btn скачать каталог и прайс-лист

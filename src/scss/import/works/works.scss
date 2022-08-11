@@ -1,3 +1,5 @@
+@use "sass:map";
+
 .works {
     padding: 35px 0;
 
@@ -132,4 +134,119 @@
 .prev {
 }
 .next {
+}
+
+
+.works {
+
+    // .works__box
+
+    &__box {
+        margin-top: 72px;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+
+        @media screen and (max-width: 1440px) {
+            gap: 20px;
+        }
+        
+        @media screen and (max-width: 1024px) {
+            gap: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width: 479px) {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+    }
+
+    // .works__item
+
+    &__item {
+        cursor: pointer;
+        width: 100%;
+        height: 330px;
+        overflow: hidden;
+        display: none;
+
+        @media screen and (max-width: 1440px) {
+            height: 300px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            height: 220px;
+        }
+
+        @media screen and (max-width: 580px) {
+            height: 150px;
+        }
+
+        &.show{
+            display: block;
+        }
+    }
+
+    // .works__item-wrapper
+
+    &__item-wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    // .works__slide-img
+
+    &__item-img {
+        height: 100%;
+        width: 100%;
+
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    // .works__btn-wrapper
+
+    &__btn-wrapper {
+        display: inline-flex;
+        align-items: center;
+        gap: 15px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        /* or 18px */
+
+        text-align: center;
+        color: map.get($theme-colors, "green_light");
+        cursor: pointer;
+        margin-top: 26px;
+        
+
+        svg {
+            width: 17px;
+        }
+    }
+
+    // .works__btn
+
+    &__btn {
+        position: relative;
+        &::after{
+            content: '';
+            border: 1px dashed map.get($theme-colors, "green_light");
+            height: 1px;
+            width: 100%;
+            bottom: -2px;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+    }
 }

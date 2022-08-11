@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "normalize.css/normalize";
 
 // @include focus-visible;
@@ -58,7 +59,7 @@ button {
 }
 
 .btn {
-    background: linear-gradient(180deg, #41d26a 0%, #27ac4c 100%);
+    background: map.get($theme-colors, "green_btn");
     border-radius: 200px;
     font-family: "Oswald";
     font-weight: 300;
@@ -68,7 +69,7 @@ button {
     line-height: 29px;
     padding: 15px 24px;
     display: inline-block;
-    box-shadow: 0px 3px 0px #208d3f;
+    box-shadow: map.get($theme-colors, "green_btn_shadow");
     cursor: pointer;
     user-select: none;
 }
@@ -82,7 +83,7 @@ input {
     background: #f0f0f0;
     border-radius: 120px;
     padding: 20px 30px;
-    color: #303030;
+    color: map.get($theme-colors, "gray");
     font-weight: 400;
     font-size: 13.9556px;
     line-height: 130%;
@@ -93,7 +94,7 @@ input {
     font-weight: 400;
     font-size: 26.2154px;
     line-height: 130%;
-    color: #303030;
+    color: map.get($theme-colors, "gray");
     text-align: center;
     text-transform: uppercase;
     user-select: none;
@@ -112,7 +113,7 @@ input {
     font-size: 16px;
     line-height: 130%;
     text-align: center;
-    color: #303030;
+    color: map.get($theme-colors, "gray");
     margin-top: 10px;
     user-select: none;
 }
