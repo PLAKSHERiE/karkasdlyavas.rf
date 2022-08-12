@@ -1,6 +1,9 @@
 footer.footer.lazy(data-bg="img/header.webp", data-bg-fallback="img/header.jpg")
     .footer__bg 
     
+    .video-bg
+        video(autoplay muted loop data-src="files/header.mp4" data-poster="img/header.jpg").lazy
+            source(data-src="files/header.mp4" type="video/mp4")
     .container
         .footer__box 
             .logo

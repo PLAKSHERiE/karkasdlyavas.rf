@@ -7,6 +7,11 @@
     @media screen and (max-width: 479px) {
         padding-bottom: 38px;
     }
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+    
     // .footer__bg
 
     &__bg {
@@ -16,6 +21,8 @@
         top: 0;
         bottom: 0;
         position: absolute;
+        z-index: 1;
+
     }
 
     // .footer__box
@@ -133,6 +140,4 @@
     }
 }
 .lazy {
-}
-.container {
 }

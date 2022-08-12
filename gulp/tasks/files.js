@@ -7,7 +7,7 @@ const filesHandler = () => (
 );
 
 const filesHandlerToRoot = () => (
-    gulp.src(`${config.src.files}/root/*`)
+    gulp.src(`${config.src.files}/root/*`, { dot: true })
         .pipe(gulp.dest(config.dest.root))
 );
 
