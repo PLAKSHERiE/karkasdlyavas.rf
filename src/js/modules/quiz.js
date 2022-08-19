@@ -74,12 +74,12 @@ export default () => {
         }, 300);
 
         $(".quiz__form").attr("slide-current", slideCurrent + 1);
-
-        $(".quiz__form-soc-btn").on("click", function () {
-            $(".quiz__form-soc-btn").removeClass("active");
-            $(this).addClass("active");
-        });
     };
+
+    $(".quiz__form-soc-btn").on("click", function () {
+        $(".quiz__form-soc-btn").removeClass("active");
+        $(this).addClass("active");
+    });
 
     $(".quiz__form-next, .quiz__form-radio input").on("click", nextQuiz);
 
@@ -102,12 +102,12 @@ export default () => {
         })
         .done((resp) => {
             if (resp.success) {
-                console.log(resp);
+                // console.log(resp);
                 window.location.href = resp.redirect;
             }
             else {
                 showError(resp.message, 4000);
-                console.log(resp.message);
+                // console.log(resp.message);
             }
         })
         .fail(() => {
