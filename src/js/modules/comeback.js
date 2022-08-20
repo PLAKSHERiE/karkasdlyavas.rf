@@ -12,8 +12,7 @@ export default () => {
 
     const comebackOpenPopup = () => {
         const MAXOPEN = 3;
-        let count = $.cookie('comeback') ? $.cookie('comeback') : false;
-
+        let count = localStorage.getItem('comeback') ? localStorage.getItem('comeback') : false;
         if (!count) {
             count = 1;
         }
@@ -23,7 +22,7 @@ export default () => {
             }
             count++;
         }
-        $.cookie('comeback', count, { expires: 365 });
+        localStorage.setItem('comeback', count);
 
         Fancybox.show(
             [
