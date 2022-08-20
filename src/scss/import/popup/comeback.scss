@@ -3,6 +3,17 @@
     min-width: 760px;
     border-radius: 10px;
 
+    @media screen and (max-width: 810px) {
+        min-width: auto;
+        width: 100%;
+        max-width: 400px;
+        padding-bottom: 30px;
+    }
+
+    @media screen and (max-width: 380px) {
+        padding: 20px;
+    }
+
     // .comeback__title
 
     &__title {
@@ -14,6 +25,10 @@
 
         color: #414141;
 
+        @media screen and (max-width: 810px) {
+            font-size: 32px;
+        }
+
         span {
             color: map.get($theme-colors, "green");
         }
@@ -24,6 +39,10 @@
     &__title--small {
         font-size: 20px;
         margin-bottom: 4px;
+
+        @media screen and (max-width: 810px) {
+            font-size: 16px;
+        }
     }
 
     // .comeback__box
@@ -33,6 +52,12 @@
         justify-content: center;
         gap: 30px;
         margin-top: 12px;
+
+        @media screen and (max-width: 810px) {
+            flex-direction: column;
+            gap: 0px;
+            // align-items: center;
+        }
     }
 
     // .comeback__box-col
@@ -41,6 +66,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        @media screen and (max-width: 810px) {
+            // width: 50%;
+        }
     }
 
     // .comeback__item
@@ -66,6 +94,10 @@
         line-height: 190%;
 
         color: #000000;
+
+        @media screen and (max-width: 810px) {
+            font-size: 16px;
+        }
     }
 
     // .comeback__subtitle
@@ -92,6 +124,9 @@
         line-height: 167%;
 
         color: #000000;
+        @media screen and (max-width: 810px) {
+            font-size: 16px;
+        }
         span {
             color: map.get($theme-colors, "green");
         }
@@ -105,6 +140,12 @@
         display: flex;
         justify-content: space-between;
         gap: 16px;
+
+        @media screen and (max-width: 810px) {
+            flex-direction: column;
+            gap: 0px;
+            align-items: center;
+        }
     }
 
     // .comeback__form
@@ -112,6 +153,10 @@
     &__form {
         padding: 30px;
         width: 100%;
+
+        @media screen and (max-width: 380px) {
+            padding: 20px 10px;
+        }
     }
 
     // .comeback__form-title
@@ -219,6 +264,10 @@
         flex: 0 0 auto;
         overflow: hidden;
         border-radius: 10px;
+
+        @media screen and (max-width: 810px) {
+            display: none;
+        }
 
         img {
             object-fit: cover;
