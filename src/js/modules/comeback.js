@@ -1,6 +1,7 @@
 import $ from "jquery";
 import { Fancybox } from "@fancyapps/ui";
 import { isMobile } from "../helpers/utils.js";
+import { } from 'jquery.cookie';
 
 export default () => {
     let comebackOpen = false;
@@ -11,7 +12,7 @@ export default () => {
 
     const comebackOpenPopup = () => {
         const MAXOPEN = 3;
-        let count = localStorage.getItem('comeback') ? localStorage.getItem('comeback') : false;
+        let count = $.cookie('comeback') ? $.cookie('comeback') : false;
         if (!count) {
             count = 1;
         }
@@ -21,7 +22,7 @@ export default () => {
             }
             count++;
         }
-        localStorage.setItem('comeback', count);
+        $.cookie('comeback', count, { expires: 30 });
 
         Fancybox.show(
             [
@@ -51,7 +52,7 @@ export default () => {
         }
         setTimeout(() => {
             comebackOpenPopup();
-        }, 5000);
+        }, 15000);
     }
 
     $(".comeback__form-soc-btn").on("click", function () {

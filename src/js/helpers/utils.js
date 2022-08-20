@@ -5,8 +5,6 @@ export const isMobile = (window) => {
         detect = true;
     }
 
-    console.log(detect);
-
     if ((window.innerWidth <= 800)) {
       detect = true;
     }
