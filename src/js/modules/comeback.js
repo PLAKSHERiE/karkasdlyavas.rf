@@ -1,6 +1,5 @@
 import $ from "jquery";
 import { Fancybox } from "@fancyapps/ui";
-import { } from "jquery.cookie";
 import { isMobile } from "../helpers/utils.js";
 
 export default () => {
